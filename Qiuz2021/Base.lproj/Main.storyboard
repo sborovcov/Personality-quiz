@@ -236,7 +236,13 @@
                             <constraint firstItem="uHB-wf-axQ" firstAttribute="trailing" secondItem="NE4-M3-hne" secondAttribute="trailing" constant="20" id="pNY-GW-rcq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Gur-3t-mfm"/>
+                    <navigationItem key="navigationItem" id="Gur-3t-mfm">
+                        <barButtonItem key="rightBarButtonItem" title="delmelater" id="PjL-Wx-qiU">
+                            <connections>
+                                <segue destination="3H4-6b-aQj" kind="show" id="ZPe-98-6hl"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="3H4-6b-aQj" kind="show" id="Uhm-1S-inc"/>
                     </connections>
@@ -245,19 +251,50 @@
             </objects>
             <point key="canvasLocation" x="1663.7681159420292" y="83.705357142857139"/>
         </scene>
-        <!--View Controller-->
+        <!--Results View Controller-->
         <scene sceneID="7w7-7A-ta2">
             <objects>
-                <viewController id="3H4-6b-aQj" sceneMemberID="viewController">
+                <viewController id="3H4-6b-aQj" customClass="ResultsViewController" customModule="Qiuz2021" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wqa-4Q-XfF">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="103" translatesAutoresizingMaskIntoConstraints="NO" id="INp-k9-iTP">
+                                <rect key="frame" x="20" y="327.5" width="374" height="187"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elz-7d-V2j">
+                                        <rect key="frame" x="128.5" y="0.0" width="117" height="60"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TES-Vf-7i6">
+                                        <rect key="frame" x="163" y="163" width="48" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="q6i-g4-VwK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q6i-g4-VwK" firstAttribute="trailing" secondItem="INp-k9-iTP" secondAttribute="trailing" constant="20" id="28O-5k-cGV"/>
+                            <constraint firstItem="INp-k9-iTP" firstAttribute="leading" secondItem="q6i-g4-VwK" secondAttribute="leading" constant="20" id="tbP-dk-zKA"/>
+                            <constraint firstItem="INp-k9-iTP" firstAttribute="centerY" secondItem="wqa-4Q-XfF" secondAttribute="centerY" id="y1h-Mj-QSI"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="bJI-4J-nE4"/>
+                    <navigationItem key="navigationItem" id="bJI-4J-nE4">
+                        <barButtonItem key="rightBarButtonItem" style="done" systemItem="done" id="ohX-c4-C83">
+                            <connections>
+                                <segue destination="ktM-Fg-l7R" kind="unwind" unwindAction="unwind:" id="hRT-Gz-J2Y"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwS-hc-6hE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <exit id="ktM-Fg-l7R" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="2583" y="84"/>
         </scene>
@@ -281,6 +318,9 @@
             <point key="canvasLocation" x="766.66666666666674" y="83.705357142857139"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="Uhm-1S-inc"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
