@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		7905CFA525AD77AC00B74522 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905CFA425AD77AC00B74522 /* QuestionViewController.swift */; };
 		7905CFAA25AD97BE00B74522 /* ResultsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905CFA925AD97BE00B74522 /* ResultsViewController.swift */; };
+		7905CFB225AD9B2300B74522 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905CFB125AD9B2300B74522 /* Question.swift */; };
+		7905CFB525AD9C0000B74522 /* ResponseList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905CFB425AD9C0000B74522 /* ResponseList.swift */; };
+		7905CFB925AD9C7700B74522 /* Answer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905CFB825AD9C7700B74522 /* Answer.swift */; };
+		7905CFBC25AD9CC300B74522 /* AnimalType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905CFBB25AD9CC300B74522 /* AnimalType.swift */; };
 		792AB31025AC9A420021A494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792AB30F25AC9A420021A494 /* AppDelegate.swift */; };
 		792AB31225AC9A420021A494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792AB31125AC9A420021A494 /* SceneDelegate.swift */; };
 		792AB31425AC9A420021A494 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792AB31325AC9A420021A494 /* WelcomeViewController.swift */; };
@@ -20,6 +24,10 @@
 /* Begin PBXFileReference section */
 		7905CFA425AD77AC00B74522 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		7905CFA925AD97BE00B74522 /* ResultsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultsViewController.swift; sourceTree = "<group>"; };
+		7905CFB125AD9B2300B74522 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		7905CFB425AD9C0000B74522 /* ResponseList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseList.swift; sourceTree = "<group>"; };
+		7905CFB825AD9C7700B74522 /* Answer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Answer.swift; sourceTree = "<group>"; };
+		7905CFBB25AD9CC300B74522 /* AnimalType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimalType.swift; sourceTree = "<group>"; };
 		792AB30C25AC9A420021A494 /* Qiuz2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiuz2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		792AB30F25AC9A420021A494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		792AB31125AC9A420021A494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +59,37 @@
 			path = "View controllers";
 			sourceTree = "<group>";
 		};
+		7905CFAC25AD99A500B74522 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7905CFBB25AD9CC300B74522 /* AnimalType.swift */,
+				7905CFB825AD9C7700B74522 /* Answer.swift */,
+				7905CFB125AD9B2300B74522 /* Question.swift */,
+				7905CFB425AD9C0000B74522 /* ResponseList.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		7905CFAD25AD99C300B74522 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				792AB31A25AC9A430021A494 /* LaunchScreen.storyboard */,
+				792AB31525AC9A420021A494 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		7905CFAE25AD99F700B74522 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				792AB30F25AC9A420021A494 /* AppDelegate.swift */,
+				792AB31825AC9A430021A494 /* Assets.xcassets */,
+				792AB31D25AC9A430021A494 /* Info.plist */,
+				792AB31125AC9A420021A494 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
 		792AB30325AC9A420021A494 = {
 			isa = PBXGroup;
 			children = (
@@ -70,12 +109,9 @@
 		792AB30E25AC9A420021A494 /* Qiuz2021 */ = {
 			isa = PBXGroup;
 			children = (
-				792AB30F25AC9A420021A494 /* AppDelegate.swift */,
-				792AB31825AC9A430021A494 /* Assets.xcassets */,
-				792AB31D25AC9A430021A494 /* Info.plist */,
-				792AB31A25AC9A430021A494 /* LaunchScreen.storyboard */,
-				792AB31525AC9A420021A494 /* Main.storyboard */,
-				792AB31125AC9A420021A494 /* SceneDelegate.swift */,
+				7905CFAE25AD99F700B74522 /* App */,
+				7905CFAC25AD99A500B74522 /* Models */,
+				7905CFAD25AD99C300B74522 /* View */,
 				7905CFA725AD77CC00B74522 /* View controllers */,
 			);
 			path = Qiuz2021;
@@ -152,10 +188,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				792AB31425AC9A420021A494 /* WelcomeViewController.swift in Sources */,
+				7905CFB525AD9C0000B74522 /* ResponseList.swift in Sources */,
 				792AB31025AC9A420021A494 /* AppDelegate.swift in Sources */,
 				7905CFA525AD77AC00B74522 /* QuestionViewController.swift in Sources */,
+				7905CFB225AD9B2300B74522 /* Question.swift in Sources */,
 				7905CFAA25AD97BE00B74522 /* ResultsViewController.swift in Sources */,
 				792AB31225AC9A420021A494 /* SceneDelegate.swift in Sources */,
+				7905CFB925AD9C7700B74522 /* Answer.swift in Sources */,
+				7905CFBC25AD9CC300B74522 /* AnimalType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,7 +344,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7S88TC37S;
-				INFOPLIST_FILE = Qiuz2021/Info.plist;
+				INFOPLIST_FILE = Qiuz2021/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -323,7 +363,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = Y7S88TC37S;
-				INFOPLIST_FILE = Qiuz2021/Info.plist;
+				INFOPLIST_FILE = Qiuz2021/App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
