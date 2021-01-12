@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7905CFA525AD77AC00B74522 /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7905CFA425AD77AC00B74522 /* QuestionViewController.swift */; };
 		792AB31025AC9A420021A494 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792AB30F25AC9A420021A494 /* AppDelegate.swift */; };
 		792AB31225AC9A420021A494 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792AB31125AC9A420021A494 /* SceneDelegate.swift */; };
 		792AB31425AC9A420021A494 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792AB31325AC9A420021A494 /* WelcomeViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7905CFA425AD77AC00B74522 /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
 		792AB30C25AC9A420021A494 /* Qiuz2021.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Qiuz2021.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		792AB30F25AC9A420021A494 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		792AB31125AC9A420021A494 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -37,6 +39,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7905CFA725AD77CC00B74522 /* View controllers */ = {
+			isa = PBXGroup;
+			children = (
+				792AB31325AC9A420021A494 /* WelcomeViewController.swift */,
+				7905CFA425AD77AC00B74522 /* QuestionViewController.swift */,
+			);
+			path = "View controllers";
+			sourceTree = "<group>";
+		};
 		792AB30325AC9A420021A494 = {
 			isa = PBXGroup;
 			children = (
@@ -57,12 +68,12 @@
 			isa = PBXGroup;
 			children = (
 				792AB30F25AC9A420021A494 /* AppDelegate.swift */,
-				792AB31125AC9A420021A494 /* SceneDelegate.swift */,
-				792AB31325AC9A420021A494 /* WelcomeViewController.swift */,
-				792AB31525AC9A420021A494 /* Main.storyboard */,
 				792AB31825AC9A430021A494 /* Assets.xcassets */,
-				792AB31A25AC9A430021A494 /* LaunchScreen.storyboard */,
 				792AB31D25AC9A430021A494 /* Info.plist */,
+				792AB31A25AC9A430021A494 /* LaunchScreen.storyboard */,
+				792AB31525AC9A420021A494 /* Main.storyboard */,
+				792AB31125AC9A420021A494 /* SceneDelegate.swift */,
+				7905CFA725AD77CC00B74522 /* View controllers */,
 			);
 			path = Qiuz2021;
 			sourceTree = "<group>";
@@ -139,6 +150,7 @@
 			files = (
 				792AB31425AC9A420021A494 /* WelcomeViewController.swift in Sources */,
 				792AB31025AC9A420021A494 /* AppDelegate.swift in Sources */,
+				7905CFA525AD77AC00B74522 /* QuestionViewController.swift in Sources */,
 				792AB31225AC9A420021A494 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
