@@ -20,6 +20,7 @@
 		792AB31925AC9A430021A494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 792AB31825AC9A430021A494 /* Assets.xcassets */; };
 		792AB31C25AC9A430021A494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 792AB31A25AC9A430021A494 /* LaunchScreen.storyboard */; };
 		79563C4225B0738E00306CA3 /* ScreenShots in Resources */ = {isa = PBXBuildFile; fileRef = 79563C4125B0738E00306CA3 /* ScreenShots */; };
+		79563C4525B075A600306CA3 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 79563C4425B075A600306CA3 /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		792AB31B25AC9A430021A494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		792AB31D25AC9A430021A494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		79563C4125B0738E00306CA3 /* ScreenShots */ = {isa = PBXFileReference; lastKnownFileType = folder; path = ScreenShots; sourceTree = "<group>"; };
+		79563C4425B075A600306CA3 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 		792AB30325AC9A420021A494 = {
 			isa = PBXGroup;
 			children = (
+				79563C4425B075A600306CA3 /* README.md */,
 				792AB30E25AC9A420021A494 /* Qiuz2021 */,
 				792AB30D25AC9A420021A494 /* Products */,
 			);
@@ -179,6 +182,7 @@
 			files = (
 				79563C4225B0738E00306CA3 /* ScreenShots in Resources */,
 				792AB31C25AC9A430021A494 /* LaunchScreen.storyboard in Resources */,
+				79563C4525B075A600306CA3 /* README.md in Resources */,
 				792AB31925AC9A430021A494 /* Assets.xcassets in Resources */,
 				792AB31725AC9A420021A494 /* Main.storyboard in Resources */,
 			);
