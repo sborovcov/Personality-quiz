@@ -16,7 +16,7 @@ class WelcomeViewController: UIViewController {
 
     // возврат на этот view из третьего view по кнопке done
     @IBAction func unwind(_ segue: UIStoryboardSegue){
-        print(#line)
+        //print(#line)
     }
 }
 
