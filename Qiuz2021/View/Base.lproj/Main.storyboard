@@ -126,6 +126,9 @@
                                         <rect key="frame" x="0.0" y="120.5" width="374" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Ответить"/>
+                                        <connections>
+                                            <action selector="rangeButtonPressed" destination="Zrl-WK-KSZ" eventType="touchUpInside" id="X7f-Bb-bUh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -192,6 +195,9 @@
                                         <rect key="frame" x="0.0" y="189" width="374" height="36"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <state key="normal" title="Ответить"/>
+                                        <connections>
+                                            <action selector="multiButtonPressed" destination="Zrl-WK-KSZ" eventType="touchUpInside" id="Tja-1f-lcc"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -201,18 +207,30 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="abT-np-up7">
                                         <rect key="frame" x="0.0" y="0.0" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="Zrl-WK-KSZ" eventType="touchUpInside" id="6FU-vE-zhK"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iy1-4q-jGn">
                                         <rect key="frame" x="0.0" y="40" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="Zrl-WK-KSZ" eventType="touchUpInside" id="QjJ-G9-TEw"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bcn-if-cgS">
                                         <rect key="frame" x="0.0" y="80" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="Zrl-WK-KSZ" eventType="touchUpInside" id="fLJ-vA-ooz"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0mA-Hd-HzX">
                                         <rect key="frame" x="0.0" y="120" width="46" height="30"/>
                                         <state key="normal" title="Button"/>
+                                        <connections>
+                                            <action selector="singleButtonPressed:" destination="Zrl-WK-KSZ" eventType="touchUpInside" id="NVA-To-3Vg"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -236,15 +254,29 @@
                             <constraint firstItem="uHB-wf-axQ" firstAttribute="trailing" secondItem="NE4-M3-hne" secondAttribute="trailing" constant="20" id="pNY-GW-rcq"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="Gur-3t-mfm">
-                        <barButtonItem key="rightBarButtonItem" title="delmelater" id="PjL-Wx-qiU">
-                            <connections>
-                                <segue destination="3H4-6b-aQj" kind="show" id="ZPe-98-6hl"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="Gur-3t-mfm"/>
                     <connections>
-                        <segue destination="3H4-6b-aQj" kind="show" id="Uhm-1S-inc"/>
+                        <outlet property="multiplyStackView" destination="Bir-ie-CCI" id="iJe-G3-egF"/>
+                        <outlet property="questionLabel" destination="ulI-Az-XZG" id="3KD-Ls-fiC"/>
+                        <outlet property="quiestionProgressView" destination="NE4-M3-hne" id="93J-2E-Ibf"/>
+                        <outlet property="rangeSlider" destination="K41-Td-Cxn" id="6hd-qh-89p"/>
+                        <outlet property="rangeStackView" destination="oQj-8l-l9T" id="BZD-9q-jCa"/>
+                        <outlet property="singleStackView" destination="4ZQ-Of-0zL" id="Tqg-hK-bFh"/>
+                        <outletCollection property="singleButtons" destination="abT-np-up7" collectionClass="NSMutableArray" id="b3I-Un-M8c"/>
+                        <outletCollection property="singleButtons" destination="Iy1-4q-jGn" collectionClass="NSMutableArray" id="FCx-4f-Des"/>
+                        <outletCollection property="singleButtons" destination="Bcn-if-cgS" collectionClass="NSMutableArray" id="rVc-kC-ack"/>
+                        <outletCollection property="singleButtons" destination="0mA-Hd-HzX" collectionClass="NSMutableArray" id="FYy-7b-CmA"/>
+                        <outletCollection property="multiLabels" destination="WW0-9e-Tzr" collectionClass="NSMutableArray" id="WpV-bV-fIG"/>
+                        <outletCollection property="multiLabels" destination="zz5-0q-B9t" collectionClass="NSMutableArray" id="hPc-z1-Q7p"/>
+                        <outletCollection property="multiLabels" destination="Dt7-Li-rcb" collectionClass="NSMutableArray" id="xyX-Px-hef"/>
+                        <outletCollection property="multiLabels" destination="0aa-0F-hpo" collectionClass="NSMutableArray" id="RrC-Vf-hdg"/>
+                        <outletCollection property="rangeLabels" destination="cPU-lV-0KK" collectionClass="NSMutableArray" id="h4P-qS-IVG"/>
+                        <outletCollection property="rangeLabels" destination="Lep-sb-ggv" collectionClass="NSMutableArray" id="u1c-Du-X7D"/>
+                        <outletCollection property="multiSwiches" destination="O4N-6H-Euj" collectionClass="NSMutableArray" id="eoS-jV-A2R"/>
+                        <outletCollection property="multiSwiches" destination="TYO-ZU-9mh" collectionClass="NSMutableArray" id="wJd-BT-YmJ"/>
+                        <outletCollection property="multiSwiches" destination="Md7-nV-VQe" collectionClass="NSMutableArray" id="P9F-L1-Kt6"/>
+                        <outletCollection property="multiSwiches" destination="h4w-io-2gK" collectionClass="NSMutableArray" id="oi7-Ba-VGz"/>
+                        <segue destination="3H4-6b-aQj" kind="show" identifier="Result segue" destinationCreationSelector="resultSegue:" id="Uhm-1S-inc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WZU-97-G0a" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -262,13 +294,13 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="103" translatesAutoresizingMaskIntoConstraints="NO" id="INp-k9-iTP">
                                 <rect key="frame" x="20" y="327.5" width="374" height="187"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elz-7d-V2j">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Elz-7d-V2j">
                                         <rect key="frame" x="128.5" y="0.0" width="117" height="60"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TES-Vf-7i6">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TES-Vf-7i6">
                                         <rect key="frame" x="163" y="163" width="48" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                         <nil key="textColor"/>
@@ -292,11 +324,15 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="animalLabel" destination="Elz-7d-V2j" id="UIm-TQ-oGG"/>
+                        <outlet property="descriptionLabel" destination="TES-Vf-7i6" id="bJu-Zs-5HH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="nwS-hc-6hE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="ktM-Fg-l7R" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="2583" y="84"/>
+            <point key="canvasLocation" x="2582.608695652174" y="83.705357142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="daX-fg-IS6">
@@ -318,9 +354,6 @@
             <point key="canvasLocation" x="766.66666666666674" y="83.705357142857139"/>
         </scene>
     </scenes>
-    <inferredMetricsTieBreakers>
-        <segue reference="Uhm-1S-inc"/>
-    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
