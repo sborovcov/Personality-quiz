@@ -109,12 +109,20 @@
 		792AB30E25AC9A420021A494 /* Qiuz2021 */ = {
 			isa = PBXGroup;
 			children = (
+				79563C3F25B051C400306CA3 /* ScreenShots */,
 				7905CFAE25AD99F700B74522 /* App */,
 				7905CFAC25AD99A500B74522 /* Models */,
 				7905CFAD25AD99C300B74522 /* View */,
 				7905CFA725AD77CC00B74522 /* View controllers */,
 			);
 			path = Qiuz2021;
+			sourceTree = "<group>";
+		};
+		79563C3F25B051C400306CA3 /* ScreenShots */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ScreenShots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
